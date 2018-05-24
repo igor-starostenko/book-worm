@@ -29,7 +29,7 @@ If the name of the `.json` file is different from **Saved Places.json** then you
 ### Setting up user
 Open **config.json** and put email and password of the google account to which you want the bookmarks to be imported to.
 
-### Running the imported
+### Running the import
 Simply run `node src/run.js`
 
 This will start the *Electron* browser that will log in to your google account, and save all the bookmarks from the exported file.
