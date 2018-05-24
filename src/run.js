@@ -32,11 +32,6 @@ const urls = uniqValues(googleMapUrls);
    // wait for 2 factor authentication;
    await page.waitFor('header[role="banner"]');
 
-   await page.goto('https://www.google.com/bookmarks/lookup?');
-   await page.waitFor('#search');
-   await page.click('a[href^="/bookmarks/mark?"]');
-   await page.waitFor('[name="add_bkmk_form"]')
-
    for(let i = 0; i < urls.length; i += 1) {
      console.log(`${i}: ${urls[i]}`);
 
